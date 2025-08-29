@@ -2,13 +2,13 @@ const cors = require("cors");
 const express = require("express");
 const bodyParser = require("body-parser");
 
-app.use(cors({
-  origin: "*"
-}));
+
 
 const app = express();
 app.use(bodyParser.json());
-
+app.use(cors({
+    origin: "*"
+  }));
 
 // === CONFIGURE YOUR DETAILS ===
 const FULL_NAME = "mayukh_garg"; // lowercase
